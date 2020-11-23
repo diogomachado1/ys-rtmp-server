@@ -33,40 +33,6 @@ const config = {
     publish: false,
     secret: envConfig.authSecret,
   },
-  fission: {
-    ffmpeg: "/usr/bin/ffmpeg",
-    tasks: [
-      {
-        rule: "live/*",
-        // model: [
-        //   {
-        //     ab: "128k",
-        //     vb: "1500k",
-        //     vs: "1920x1080",
-        //     vf: "30",
-        //   },
-        //   {
-        //     ab: "128k",
-        //     vb: "1500k",
-        //     vs: "1280x720",
-        //     vf: "30",
-        //   },
-        //   {
-        //     ab: "96k",
-        //     vb: "1000k",
-        //     vs: "854x480",
-        //     vf: "24",
-        //   },
-        //   {
-        //     ab: "96k",
-        //     vb: "600k",
-        //     vs: "640x360",
-        //     vf: "20",
-        //   },
-        // ],
-      },
-    ],
-  },
 };
 
 let nms = new NodeMediaServer(config);
